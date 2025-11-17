@@ -25,17 +25,17 @@ spring:
     timeout: 2592000
   redis:
     database: 0
-    host: vps.379599.xyz
+    host: 
     port: 6379
     timeout: 5000
-    password: 123456
+    password: 
 
   # 数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://vps.379599.xyz:3306/yu_picture
-    username: csh
-    password: 123456
+    url: jdbc:mysql://:3306/yu_picture
+    username: 
+    password: 
 
   # 空间图片分表
   shardingsphere:
@@ -44,9 +44,9 @@ spring:
       yu_picture:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://vps.379599.xyz:3306/yu_picture
-        username: csh
-        password: 123456
+        url: jdbc:mysql://:3306/yu_picture
+        username: 
+        password: 
     rules:
       sharding:
         tables:
@@ -83,8 +83,8 @@ knife4j:
   production: false
   basic:
     enable: true
-    username: root
-    password: 123456
+    username: 
+    password: 
   openapi:
     title: "接口文档"
     version: 1.0
